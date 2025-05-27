@@ -1,0 +1,11 @@
+<button [ngClass]="btnClass">
+  <ng-container *ngIf="icon && iconPosition === 'left'">
+    <i class="fas fa-{{ icon }}"></i>
+  </ng-container>
+
+  <ng-container *ngIf="label">{{ label }}</ng-container>
+
+  <ng-container *ngIf="icon && iconPosition === 'right'">
+    <i class="fas fa-{{ icon }}"></i>
+  </ng-container>
+</button>

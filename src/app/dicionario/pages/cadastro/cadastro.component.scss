@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.topMenu {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px;
+}
+
+.topMenu button {
+  background: none;
+  border: none;
+  
+  font-size: 24px;
+  font-weight: 700;
+
+  padding: 0;
+  color: #324892;
+
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.topMenu button:hover {
+  color: #5472d3;
+}
+
+.content {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 10px 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.lupa {
+  margin-right: 100px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+
+tbody tr td:first-child {
+  font-weight: 600;
+  color: #324892;
+}
+
+.newDictionary {
+  margin-top: 10px;
+}
