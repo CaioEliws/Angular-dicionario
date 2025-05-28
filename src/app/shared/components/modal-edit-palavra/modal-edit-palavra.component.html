@@ -1,0 +1,106 @@
+<div class="modal-header">
+    <h4 class="modal-title">
+        <i class="fas fa-pencil-alt"></i> Editar palavra
+    </h4>
+
+    <button 
+        type="button" 
+        class="close" 
+        aria-label="Close"
+        (click)="closeModal()"
+    >
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="modal-body">
+    <div class="form-group">
+        <label for="palavra">Palavra</label>
+
+        <input 
+            type="text" 
+            id="palavra" 
+            class="form-control" 
+            value="I.A.S."
+            placeholder="Digite a palavra" />
+    </div>
+
+    <div class="form-group">
+        <label for="definicao">Definição</label>
+
+        <input 
+            type="text" 
+            id="definicao" 
+            class="form-control" 
+            value="I.A.S. significa Índice de Adequação Salarial que é utilizado para ..."
+            placeholder="Digite a definição" />
+    </div>
+
+    <div class="form-group">
+        <label for="definicaoExtra">Definição extra</label>
+        
+        <div class="editor-toolbar">
+        <button class="editor-btn">
+            <i class="fas fa-bold"></i>
+        </button>
+
+        <button class="editor-btn">
+            <i class="fas fa-italic"></i>
+        </button>
+
+        <button class="editor-btn">
+            <i class="fas fa-underline"></i>
+        </button>
+
+        <button class="editor-btn">
+            <i class="fas fa-align-left"></i>
+        </button>
+
+        <button class="editor-btn">
+            <i class="fas fa-align-center"></i>
+        </button>
+
+        <button class="editor-btn">
+            <i class="fas fa-align-right"></i>
+        </button>
+
+        <button class="editor-btn">
+            <i class="fas fa-align-justify"></i>
+        </button>
+        
+        <div class="dropdown-container">
+            <select class="dropdown-select">
+            <option value="12">12px</option>
+            <option value="14" selected>14px</option>
+            <option value="16">16px</option>
+            <option value="18">18px</option>
+            </select>
+        </div>
+        
+        <button class="editor-btn">
+            <i class="fas fa-font" style="color: #333;"></i>
+        </button>
+        <button class="editor-btn">
+            <i class="fas fa-highlighter"></i>
+        </button>
+        <button class="editor-btn">
+            <i class="fas fa-link"></i>
+        </button>
+        </div>
+    
+        <textarea 
+            id="definicaoExtra" 
+            class="editor-textarea" 
+            placeholder="Este é um exemplo de cálculo do I.A.S. ...">Este é um exemplo de cálculo do I.A.S. ...
+        </textarea>
+    </div>
+
+    <div class="text-center">
+        <button 
+            type="button" 
+            class="btn btn-primary salvar-btn"
+        >
+        Salvar
+        </button>
+    </div>
+</div>

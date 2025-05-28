@@ -1,11 +1,11 @@
-<button [ngClass]="btnClass">
+<button [ngClass]="btnClass" (click)="onClick()">
   <ng-container *ngIf="icon && iconPosition === 'left'">
-    <i class="fas fa-{{ icon }}"></i>
+    <i [class]="icon"></i>
   </ng-container>
 
-  <ng-container *ngIf="label">{{ label }}</ng-container>
+  <span *ngIf="label">{{ label }}</span>
 
   <ng-container *ngIf="icon && iconPosition === 'right'">
-    <i class="fas fa-{{ icon }}"></i>
+    <i [class]="icon"></i>
   </ng-container>
 </button>

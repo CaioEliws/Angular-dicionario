@@ -1,0 +1,165 @@
+.modal-header {
+  background-color: #2d4fa0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+
+  .modal-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .close {
+    color: white;
+    font-size: 1.5rem;
+    opacity: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.modal-body {
+  padding: 1.5rem;
+
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+
+      &:focus {
+        outline: none;
+        border-color: #2d4fa0;
+        box-shadow: 0 0 0 2px rgba(45, 79, 160, 0.1);
+      }
+    }
+  }
+
+  .editor-toolbar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    flex-wrap: wrap;
+
+    .editor-btn {
+      background: none;
+      border: 1px solid #ccc;
+      padding: 4px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+      color: #555;
+      transition: background-color 0.2s;
+      min-width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: #e9ecef;
+      }
+
+      &.active {
+        background-color: #2d4fa0;
+        color: white;
+        border-color: #2d4fa0;
+      }
+    }
+
+    .dropdown-container {
+      position: relative;
+      display: inline-block;
+
+      .dropdown-select {
+        background: white;
+        border: 1px solid #ccc;
+        padding: 4px 20px 4px 8px;
+        border-radius: 3px;
+        font-size: 12px;
+        cursor: pointer;
+        appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23666" d="M6 9L1.5 4.5h9z"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 4px center;
+        height: 28px;
+      }
+    }
+  }
+
+  .editor-textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    font-size: 14px;
+    resize: vertical;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: #2d4fa0;
+      box-shadow: 0 0 0 2px rgba(45, 79, 160, 0.1);
+    }
+  }
+
+  .text-center {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .salvar-btn {
+    background-color: #2d4fa0;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #1e3a7a;
+    }
+  }
+}
