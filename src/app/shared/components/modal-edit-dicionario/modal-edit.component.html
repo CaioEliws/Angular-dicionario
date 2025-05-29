@@ -1,24 +1,22 @@
 <div class="modal-header">
   <h4 class="modal-title">
-    <i class="fas fa-pencil-alt"></i> Dicionário
+    <i class="fas fa-pencil-alt"></i> {{ titulo }}
   </h4>
-  <button 
-    type="button" 
-    class="close" 
-    aria-label="Close" 
-    (click)="closeModal()">
-    
-    <span 
-      aria-hidden="true">
-      &times;
-    </span>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;</span>
   </button>
 </div>
 
 <div class="modal-body">
   <div class="form-group">
-    <label for="titulo">Título</label>
-    <input type="text" id="titulo" class="form-control" value="Dicionário Join RH" />
+    <label for="nomeDicionario">Título</label>
+    <input
+      type="text"
+      id="nomeDicionario"
+      class="form-control"
+      placeholder="Digite o nome do dicionário"
+      [(ngModel)]="nomeDicionario"
+    />
   </div>
 
   <div class="color-option" *ngFor="let color of colors">
@@ -27,6 +25,8 @@
   </div>
 
   <div class="text-center">
-    <button class="btn btn-primary salvar-btn">Salvar</button>
+    <button class="btn btn-primary salvar-btn" (click)="salvar()">
+      {{ textoBotao }}
+    </button>
   </div>
 </div>

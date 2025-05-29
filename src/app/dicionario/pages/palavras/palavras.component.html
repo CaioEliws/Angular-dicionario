@@ -1,0 +1,38 @@
+<div class="PalavraContainer">
+  <div class="topMenu">
+    <button (click)="openModalParaAdicionar()">
+      Palavra
+      <i class="fas fa-plus"></i>
+    </button>
+
+    <button>
+      <i class="fas fa-question-circle"></i>
+      Ajuda
+    </button>
+  </div>
+
+  <div class="content">
+    <table>
+      <tbody>
+        <tr *ngFor="let palavra of palavras">
+          <td>{{ palavra.word }}</td>
+          <td colspan="2">
+            <div class="buttons">
+              <div class="btn-group">
+                <app-icon-button
+                  icon="fas fa-pencil-alt"
+                  (clicked)="openModal(palavra.id)">
+                </app-icon-button>
+                <app-icon-button 
+                  icon="fas fa-times" 
+                  *ngIf="palavra.id !== undefined"
+                  (clicked)="deletarPalavra(palavra.id!)">
+                </app-icon-button>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

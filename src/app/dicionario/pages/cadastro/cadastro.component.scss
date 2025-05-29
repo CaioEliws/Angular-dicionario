@@ -1,15 +1,8 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
 .topMenu {
   display: flex;
   justify-content: space-between;
 
-  padding: 20px;
+  margin: 0px 60px 0px 50px;
 }
 
 .topMenu button {
@@ -31,8 +24,7 @@ html, body {
 }
 
 .content {
-  padding: 20px;
-  box-sizing: border-box;
+  margin: 20px 50px 0px 50px;
 }
 
 table {
@@ -70,6 +62,6 @@ tbody tr td:first-child {
   color: #324892;
 }
 
-.newDictionary {
+.BtnNewDictionary {
   margin-top: 10px;
 }

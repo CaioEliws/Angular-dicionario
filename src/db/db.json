@@ -1,0 +1,67 @@
+{
+  "dicionarios": [
+    {
+      "name": "Dicionario Join RH",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Dicionario RH"
+    },
+    {
+      "id": "3",
+      "name": "Dicionario Geral"
+    }
+  ],
+  "palavras": [
+    {
+      "id": "1",
+      "dicionarioId": "1",
+      "word": "I.A.S",
+      "definition": "I.A.S. significa Índice de Adequação Salarial que é utilizado para ...",
+      "definitionExtra": "Este é um exemplo de cálculo do I.A.S. ..."
+    },
+    {
+      "id": "2",
+      "dicionarioId": "1",
+      "word": "Índice",
+      "definition": "Índice representa uma medida estatística usada para análise.",
+      "definitionExtra": "Pode variar de acordo com a metodologia usada."
+    },
+    {
+      "id": "3",
+      "dicionarioId": "2",
+      "word": "RH",
+      "definition": "RH significa Recursos Humanos, o setor responsável por ...",
+      "definitionExtra": "Exemplo de aplicação prática no contexto corporativo."
+    },
+    {
+      "id": "4",
+      "dicionarioId": "2",
+      "word": "Colaborador",
+      "definition": "Pessoa que trabalha em uma empresa ou organização.",
+      "definitionExtra": "Também chamado de funcionário ou empregado."
+    },
+    {
+      "id": "5",
+      "dicionarioId": "3",
+      "word": "Geral",
+      "definition": "Refere-se a algo amplo, abrangente ou não específico.",
+      "definitionExtra": "Usado em contextos amplos e genéricos."
+    },
+    {
+      "id": "aecc",
+      "dicionarioId": null,
+      "word": "Caio",
+      "definition": "Caio",
+      "definitionExtra": ""
+    },
+    {
+      "id": "732b",
+      "dicionarioId": null,
+      "word": "Caio3424324",
+      "definition": "42314214",
+      "definitionExtra": ""
+    }
+  ]
+}

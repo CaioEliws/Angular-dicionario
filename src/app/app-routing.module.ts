@@ -6,7 +6,7 @@ const routes: Routes = [
     path: 'dicionario',
     loadChildren: () => import('./dicionario/dicionario.module').then(m => m.DicionarioModule)
   },
-  { path: '', redirectTo: 'dicionario', pathMatch: 'full' }
+  { path: '', redirectTo: 'dicionario', pathMatch: 'full' },
 ];
 
 @NgModule({

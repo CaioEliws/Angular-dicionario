@@ -4,11 +4,13 @@ import { DicionarioRoutingModule } from './dicionario-routing.module';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ConsultaComponent } from './pages/consulta/consulta.component';
 import { SharedModule } from '../shared/shared.module';
+import { PalavrasComponent } from './pages/palavras/palavras.component';
 
 @NgModule({
   declarations: [
     CadastroComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    PalavrasComponent
   ],
   imports: [
     CommonModule,
