@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { Palavra } from 'src/app/models/dicionario.model';
-import { Subject } from 'rxjs';
+import { EventEmitter } from '@angular/core';
 
 import { PalavraService } from 'src/app/services/palavras.service';
 
@@ -13,7 +13,7 @@ import { PalavraService } from 'src/app/services/palavras.service';
 export class ModalEditPalavraComponent implements OnInit {
   titulo = 'Adicionar palavra';
   dicionarioId!: string;
-  palavraId?: number;
+  palavraId?: string;
 
   palavra: Palavra = {
     dicionarioId: '',
@@ -22,7 +22,7 @@ export class ModalEditPalavraComponent implements OnInit {
     definitionExtra: ''
   };
 
-  onSave = new Subject<void>();
+  onSave = new EventEmitter<void>();
 
   constructor(
     public bsModalRef: BsModalRef,
@@ -33,7 +33,6 @@ export class ModalEditPalavraComponent implements OnInit {
     if (this.palavraId) {
       this.palavraService.obterPalavraPorId(this.palavraId).subscribe({
         next: (res) => this.palavra = res,
-        error: () => alert('Erro ao carregar a palavra.')
       });
     }
   }
@@ -50,9 +49,7 @@ export class ModalEditPalavraComponent implements OnInit {
       next: () => {
         alert(this.palavraId ? 'Palavra atualizada!' : 'Palavra criada!');
         this.onSave.next();
-        this.bsModalRef.hide();
-      },
-      error: () => alert('Erro ao salvar a palavra.')
+      }
     });
   }
 

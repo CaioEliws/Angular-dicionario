@@ -11,9 +11,9 @@ export class IconButtonComponent {
   @Input() iconPosition: 'left' | 'right' = 'left';
   @Input() btnClass?: string;
 
-  @Output() clicked = new EventEmitter<void>();
+  @Output() click = new EventEmitter<void>();
 
   onClick() {
-    this.clicked.emit();
+    this.click.emit();
   }
 }

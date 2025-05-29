@@ -1,20 +1,18 @@
 <div class="modal-header">
-  <h4 class="modal-title">
-    <i class="fas fa-file-alt"></i> I.A.S
+  <h4>
+    <i class="fas fa-file-alt"></i> {{ palavra.word }}
   </h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="closeModal()"></button>
 </div>
 
 <div class="modal-body">
-  <span class="modal-texto-longo">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel nibh bibendum arcu blandit volutpat in in sem. Etiam venenatis luctus justo,
-    nec ultricies ligula feugiat sit amet. Duis accumsan varius velit eu dignissim. Phasellus dignissim sagittis faucibus. Phasellus euismod orci eget
-    magna malesuada, porttitor semper enim mattis. Ut ultricies dui eu fermentum volutpat. Praesent non eros at mi tristique ullamcorper eget vel
-    eros. Integer commodo ultrices tincidunt. Mauris viverra pulvinar massa sit amet tristique. In nisl ligula, eleifend non molestie pellentesque,
-    vestibulum in arcu. Phasellus tortor nulla, mollis vitae justo non, venenatis consequat justo. Suspendisse ac volutpat dui. Sed luctus laoreet
-    vehicula. Duis malesuada finibus dictum.
-    Mauris aliquet urna in quam sagittis tincidunt. Donec viverra pulvinar ligula ut tristique. Etiam faucibus massa id tincidunt vulputate. Nam id
-    suscipit ipsum, eu mollis erat. Mauris et facilisis eros, in euismod velit. Nullam tortor erat, facilisis sit amet egestas sit amet, efficitur eget
-    magna. Vivamus blandit nisi eu ligula faucibus porttitor. Cras sagittis nunc ut ligula mattis pharetra.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-  </span>
+  <strong>Definição:</strong>
+  <p>
+    {{ palavra.definition }}
+  </p>
+
+  <strong>Definição extra:</strong> 
+  <p>
+    {{ palavra.definitionExtra || 'Nenhuma' }}
+  </p>
 </div>

@@ -55,7 +55,6 @@ export class ModalEditComponent implements OnInit {
       next: (resultado) => {
         alert(`Dicionário ${isNew ? 'criado' : 'atualizado'} com sucesso!`);
         this.onSave.emit(resultado);
-        this.bsModalRef.hide();
       }
     });
   }
