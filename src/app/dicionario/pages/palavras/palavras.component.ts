@@ -36,7 +36,7 @@ export class PalavrasComponent implements OnInit {
     });
   }
 
-  deletarPalavra(id: number) {
+  deletarPalavra(id: string) {
     
     this.palavraService.deletarPalavra(id).subscribe({
       next: () => {
@@ -47,7 +47,7 @@ export class PalavrasComponent implements OnInit {
     
   }
 
-  openModal(palavraId?: number) {
+  openModal(palavraId?: string) {
     const initialState: ModalOptions = {
       initialState: {
         titulo: palavraId ? 'Editar palavra' : 'Adicionar palavra',

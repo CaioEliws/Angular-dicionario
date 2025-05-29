@@ -5,6 +5,7 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ConsultaComponent } from './pages/consulta/consulta.component';
 import { SharedModule } from '../shared/shared.module';
 import { PalavrasComponent } from './pages/palavras/palavras.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { PalavrasComponent } from './pages/palavras/palavras.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     DicionarioRoutingModule,
     SharedModule
   ]

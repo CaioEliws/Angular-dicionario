@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { Router } from '@angular/router';
 
-import { ModalEditComponent } from 'src/app/shared/components/modal-edit-dicionario/modal-edit.component';
-import { ModalEditPalavraComponent } from 'src/app/shared/components/modal-edit-palavra/modal-edit-palavra.component';
+import { ModalEditComponent } from '../../../shared/components/modal-edit-dicionario/modal-edit.component';
+import { ModalEditPalavraComponent } from '../../../shared/components/modal-edit-palavra/modal-edit-palavra.component';
 
-import { DicionarioService } from 'src/app/services/dicionario.service';
-import { Dicionario } from 'src/app/models/dicionario.model';
+import { DicionarioService } from '../../../services/dicionario.service';
+import { Dicionario } from '../../../models/dicionario.model';
 
 @Component({
   selector: 'app-cadastro',
@@ -64,7 +64,6 @@ export class CadastroComponent implements OnInit {
     };
     this.bsModalRef = this.modalService.show(ModalEditPalavraComponent, initialState);
   }
-
 
   ngOnInit() {
     this.carregarDicionarios();

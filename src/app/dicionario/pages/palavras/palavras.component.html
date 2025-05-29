@@ -21,12 +21,12 @@
               <div class="btn-group">
                 <app-icon-button
                   icon="fas fa-pencil-alt"
-                  (clicked)="openModal(palavra.id)">
+                  (click)="openModal(palavra.id)">
                 </app-icon-button>
                 <app-icon-button 
                   icon="fas fa-times" 
                   *ngIf="palavra.id !== undefined"
-                  (clicked)="deletarPalavra(palavra.id!)">
+                  (click)="deletarPalavra(palavra.id!)">
                 </app-icon-button>
               </div>
             </div>

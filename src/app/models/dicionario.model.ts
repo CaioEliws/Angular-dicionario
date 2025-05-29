@@ -1,13 +1,12 @@
 export interface Palavra {
-  id?: number;
+  id?: string;
   dicionarioId: string;
   word: string;
   definition: string;
-  definitionExtra?: string;
+  definitionExtra: string;
 }
 
 export interface Dicionario {
   id: string;
   name: string;
-  words: Palavra[];
 }

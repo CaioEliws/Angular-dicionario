@@ -1,1 +1,41 @@
-<p>consulta works!</p>
+<div class="topMenu">
+  <select 
+    [(ngModel)]="dicionarioSelecionadoId" 
+    (change)="carregarPalavras()"
+  >
+    <option 
+      *ngFor="let dic of dicionarios" 
+      [value]="dic.id"
+    >
+      {{ dic.name }}
+    </option>
+  </select>
+</div>
+
+<div class="content">
+  <table>
+    <tbody>
+      <tr *ngFor="let palavra of palavras">
+        <div>
+            <td class="title">{{ palavra.word }}</td>
+    
+            <td>
+              <button 
+                (click)="abrirModalConsulta(palavra)" 
+                class="btn btn-link p-0 m-0 align-baseline text-primary"
+                type="button"
+              >
+                ver mais
+              </button>
+            </td>
+        </div>
+
+        <span>
+          {{ palavra.definition.length > 200 
+          ? (palavra.definition | slice:0:200) + '...'
+          : palavra.definition }}
+        </span>
+      </tr>
+    </tbody>
+  </table>
+</div>

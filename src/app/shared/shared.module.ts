@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IconButtonComponent } from './components/icon-button/icon-button.component';
+import { IconButtonComponent } from '../shared/components/icon-button/icon-button.component';
 import { ModalEditComponent } from './components/modal-edit-dicionario/modal-edit.component';
 import { ModalEditPalavraComponent } from './components/modal-edit-palavra/modal-edit-palavra.component';
 import { FormsModule } from '@angular/forms';
+import { ModalConsultaDefinicaoComponent } from './components/modal-consulta-definicao/modal-consulta-definicao.component';
 
 @NgModule({
   declarations: [
     IconButtonComponent,
     ModalEditComponent,
-    ModalEditPalavraComponent
+    ModalEditPalavraComponent,
+    ModalConsultaDefinicaoComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { FormsModule } from '@angular/forms';
   exports: [
     IconButtonComponent,
     ModalEditComponent,
-    ModalEditPalavraComponent
+    ModalEditPalavraComponent,
+    ModalConsultaDefinicaoComponent
   ]
 })
 export class SharedModule {}

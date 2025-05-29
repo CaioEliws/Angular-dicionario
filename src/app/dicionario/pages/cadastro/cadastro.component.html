@@ -21,23 +21,23 @@
             <app-icon-button 
               icon="fas fa-search" 
               class="lupa"
-              (clicked)="openPalavra(dicionario.id)">
+              (click)="openPalavra(dicionario.id)">
             </app-icon-button>
 
             <div class="btn-group">
               <app-icon-button
                 label="abc" 
-                (clicked)="openModalAdicionarPalavra(dicionario.id)">
+                (click)="openModalAdicionarPalavra(dicionario.id)">
               </app-icon-button>
 
               <app-icon-button
                 icon="fas fa-cog"
-                (clicked)="openModal(dicionario.id)">
+                (click)="openModal(dicionario.id)">
               </app-icon-button>
 
               <app-icon-button
                 icon="fas fa-times"
-                (clicked)="deletarDicionario(dicionario.id)">
+                (click)="deletarDicionario(dicionario.id)">
               </app-icon-button>
             </div>
           </div>
